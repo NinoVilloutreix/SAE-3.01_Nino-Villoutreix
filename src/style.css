@@ -1,12 +1,28 @@
 @import 'tailwindcss';
 
 @theme inline {
-  --color-reddo: var(--clr-red);
+  --color-tan: var(--clr-tan);
+  --color-dark-tan: var(--clr-dark-tan);
+  --color-light-tan: var(--clr-light-tan);
+  --color-very-dark-tan: var(--clr-very-dark-tan);
+  --font: 'Space Mono', monospace;
 }
 
 
 @layer base {
   :root {
-    --clr-red: oklch(62.793% 0.25768 29.223);
+    --clr-tan: #CBBBA1;
+    --clr-dark-tan: #AC9C7B;
+    --clr-light-tan: #FBF0EA;
+    --clr-very-dark-tan: #26140D;
+    
+    
+    --font: 'Space Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .mono {
+    font-family: var(--font);
   }
 }
