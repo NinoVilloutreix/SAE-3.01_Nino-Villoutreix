@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-reddo: var(--clr-red);
+}
+
+
+@layer base {
+  :root {
+    --clr-red: oklch(62.793% 0.25768 29.223);
+  }
+}
