@@ -8,15 +8,17 @@
 <body class="bg-light-tan overflow-x-hidden">
 
   <!-- Header -->
-  <header class="w-full bg-very-dark-tan h-16 flex justify-between items-center px-6 md:px-10">
-    <img class="w-12" src="public/LOGO.png" alt="Logo JeanBurger">
-    <div class="flex items-center gap-4">
-      <h3 class="text-white text-sm md:text-base">Profil</h3>
-      <button class="bg-white p-2 rounded-full">
-        <img class="w-5" src="public/Profile.png" alt="Profile">
-      </button>
+  <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
+    <a href ="../index.html" class="flex p-1">
+        <img class="w-12" src="../public/LOGO.png" alt="Logo JeanBurger">
+      </a>
+    <div class="flex justify-center items-center gap-5">
+        <h3 class="text-white">Profil</h3>
+        <button class="bg-white p-3 rounded-full overflow-hidden">
+            <img class="w-5" src="../public/Profile.png" alt="Profile">
+        </button>
     </div>
-  </header>
+</header>
 
   <!-- Main Content -->
   <main class="w-screen px-4 sm:px-6 md:px-10 py-10 flex flex-col gap-16">
@@ -35,33 +37,367 @@
     </section>
 
     <!-- Produits + Commande -->
-    <section class="flex flex-col lg:flex-row gap-10">
+    <section class="flex flex-row gap-10">
       
       <!-- Produits -->
       <div class="flex-1">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Toutes nos catégories</h2>
         <hr class="bg-very-dark-tan h-1 w-1/2 mb-6">
         <div class="flex flex-row flex-wrap gap-6">
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
+          <a href="/Details/Frites.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/Frites.png" class="object-cover w-full h-full" alt="Frites">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Frites</li>
+                  <li class="truncate w-52">Grande.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">0.90 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="/Check.svg" alt="logo-check">
+                  <p>En stock</p>
+                </button>
+
+              </span>
+            </article>
+          </a>
+          
+          <a href="/Details/Mozza.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/Mozza.png" class="object-cover w-full h-full" alt="Mozza">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Batonnets Mozza.</li>
+                  <li class="truncate w-52">5 pièces</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">0.90 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
+                  <p>Bientôt épuisé</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
+          
+          <a href="/Details/Oinion.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/OignonRing.png" class="w-full h-full object-cover" alt="OignonRing">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Onion Ring</li>
+                  <li class="truncate w-52">6 pièces.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">0.90 €</h3>
+                  <button class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
+                  <p>Indisponible</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
+
+          <a href="/Details/CheeseBurger.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/CheeseBurger.png" class="object-cover w-full h-full" alt="CheeseBurger">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Cheese Burger</li>
+                  <li class="truncate w-52">Steak Haché Blason prestige, Cheddar, Sauce Burger, Tomates et Iceberg.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">9 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="/Check.svg" alt="logo-check">
+                  <p>En stock</p>
+                </button>
+
+              </span>
+            </article>
+          </a>
+          
+          <a href="/Details/Hamburger.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/Hamburger.jpg" class="object-cover w-full h-full" alt="Hamburger">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Hamburger</li>
+                  <li class="truncate w-52">Steak Haché Blason prestige, Cheddar, Ketchup.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">8 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
+                  <p>Bientôt épuisé</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
+          
+          <a href="/Details/VeggieBurger.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/VeggieBurger.png" class="object-cover w-full h-full" alt="VeggieBurger">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Veggie Burger</li>
+                  <li class="truncate w-52">Galette de Pommes de Terre, Cheddar, Bacon, Sauce Paprika, Tomates et Roquette.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">8 €</h3>
+                  <button
+                    class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
+                  <p>Indisponible</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
+          <a href="/Details/Brownie.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/Brownie.png" class="object-cover w-full h-full" alt="Brownie">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Brownie</li>
+                  <li class="truncate w-52">Fondant.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">1.50 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="/Check.svg" alt="logo-check">
+                  <p>En stock</p>
+                </button>
+
+              </span>
+            </article>
+          </a>
+          
+          <a href="/Details/Yaourt.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/Yaourt.png" class="object-cover w-full h-full" alt="Yaourt">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Yaourt Framboise</li>
+                  <li class="truncate w-52">Crumble, yaourt et confiture de framboise.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">1 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
+                  <p>Bientôt épuisé</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
+          
+          <a href="/Details/Glace.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/Glace.png" class="w-full h-full object-cover" alt="Glace">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Glace</li>
+                  <li class="truncate w-52">Chocolat, Vanille, Fraise, Framboise, Pistache.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">2 €</h3>
+                  <button class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
+                  <p>Indisponible</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
+          <a href="/Details/CocaCola.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/CocaCola.png" class="object-cover w-full h-full" alt="CocaCola">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">CocaCola</li>
+                  <li class="truncate w-52">60 cl.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">1.50 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="/Check.svg" alt="logo-check">
+                  <p>En stock</p>
+                </button>
+
+              </span>
+            </article>
+          </a>
+          
+          <a href="/Details/Orangina.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/Orangina.png" class="object-cover w-full h-full" alt="Orangina">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Orangina</li>
+                  <li class="truncate w-52">50 cl.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">1 €</h3>
+                  <button
+                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
+                  <p>Bientôt épuisé</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
+          <a href="/Details/Pepsi.html" class="flex">
+            <article
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
+              <figure class="flex h-40 w-full">
+                <img src="/public/Pepsi.png" class="w-full h-full object-cover" alt="Pepsi">
+              </figure>
+              <span class="flex flex-col px-2 py-5 text-left gap-5">
+                <ul class="flex flex-col">
+                  <li class="text-2xl">Pepsi</li>
+                  <li class="truncate w-52">50 cl.</li>
+                </ul>
+                <span class="flex justify-between">
+                  <h3 class="text-3xl">1.50 €</h3>
+                  <button class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
+                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
+                  </button>
+                </span>
+
+                <button
+                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
+                  <p>Indisponible</p>
+                </button>
+
+
+              </span>
+            </article>
+          </a>
         </div>
       </div>
 
       <!-- Commande -->
-      <aside class="w-full lg:w-1/3 p-6">
+      <aside class=" w-1/3 min-w-100 p-6">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Ma commande :</h2>
         <ul class="flex flex-col gap-2.5">
           <li class="flex justify-between items-center text-2xl px-2 py-2.5">

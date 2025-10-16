@@ -10,6 +10,8 @@
   --color-blue: var(--clr-blue);
   --color-light-blue: var(--clr-light-blue);
   --color-button: var(--clr-button);
+  --color-indisp: var(--clr-indisp);
+  --color-indisp-bg: var(--clr-indisp-bg);
 
   --font: 'Space Mono', monospace;
 }
@@ -26,6 +28,8 @@
     --clr-blue : #096EBE;
     --clr-light-blue : #92C2EA;
     --clr-button : #DED7CC;
+    --clr-indisp : #DDDDDD;
+    --clr-indisp-bg : #b8b5b1;
 
     --font: 'Space Mono', monospace;
   }

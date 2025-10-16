@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheese Burger - Jean Burgers</title>
+    <title>Hamburger - Jean Burgers</title>
     <link href="/src/style.css" rel="stylesheet" />
 </head>
-
 <body class="min-h-screen bg-light-tan">
     <!-- Header -->
     <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
@@ -22,14 +20,10 @@
         </div>
     </header>
 
-
     <div class="max-w-7xl mx-auto p-6">
         <!-- Back Button -->
-        <a onclick="history.back()"
-            class=" cursor-pointer mb-6 w-12 h-12 bg-tan rounded-full flex items-center justify-center hover:bg-dark-tan transition">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="text-gray-700">
+        <a onclick="history.back()" class=" cursor-pointer mb-6 w-12 h-12 bg-tan rounded-full flex items-center justify-center hover:bg-dark-tan transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
                 <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
         </a>
@@ -38,10 +32,11 @@
             <!-- Product Image -->
             <div class="bg-white overflow-hidden">
                 <div class="w-full h-full">
-                    <img src="/public/CheeseBurger.png" alt="Cheese Burger" class="w-full h-full object-cover" />
+                  <img src="/public/Hamburger.jpg" alt="Cheese Burger"
+                       class="w-full h-full object-cover" />
                 </div>
-            </div>
-
+              </div>
+              
 
             <!-- Product Info -->
             <div class="flex flex-col gap-10">
@@ -55,15 +50,15 @@
                         <span class="text-tan text-2xl">★</span>
                         <span class="text-sm text-very-dark-tan ml-2">(201 reviews)</span>
                     </div>
-
+                    
                     <div class="flex items-center gap-4">
-                        <h1 class="text-4xl font-bold text-very-dark-tan">Cheese Burger</h1>
+                        <h1 class="text-4xl font-bold text-very-dark-tan">Hamburger</h1>
                         <button class="bg-tan px-4 py-2 rounded-full text-sm flex items-center gap-2">
-                            <img alt="logo-check" class="w-4" src="/public/Check.svg">
-                            <h2>En Stock</h2>
+                            <img alt="logo-check" class="w-4" src="/public/SmileDown.svg">
+                            <h2>Bientôt épuisé</h2>
                         </button>
                     </div>
-
+                    
                     <p class="text-sm text-very-dark-tan mt-2">
                         <span class="font-semibold">Catégorie :</span> Burger
                     </p>
@@ -71,7 +66,7 @@
 
                 <!-- Description -->
                 <p class="text-gray-700 leading-relaxed">
-                    Steak Haché Blason Prestige, Cheddar, Sauce Burger, Tomates et Iceberg.
+                    Steak Haché Blason prestige, Cheddar, Ketchup.
                 </p>
 
                 <hr class="bg-very-dark-tan min-w-50 h-0.5">
@@ -91,36 +86,30 @@
 
                 <!-- Price -->
                 <div class="text-5xl font-bold text-gray-900">
-                    9 €
+                    8 €
                 </div>
 
                 <!-- Quantity Selector -->
                 <div class="flex items-center justify-center gap-8 py-4">
                     <button class="w-12 h-12 flex items-center justify-center hover:scale-120 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
                             <polyline points="15 18 9 12 15 6"></polyline>
                         </svg>
                     </button>
                     <span id="quantity" class="text-2xl font-semibold w-12 text-center">1</span>
                     <button class="w-12 h-12 flex items-center justify-center hover:scale-120 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
                             <polyline points="9 18 15 12 9 6"></polyline>
                         </svg>
                     </button>
                 </div>
 
                 <!-- Add to Cart Button -->
-                <button
-                    class=" cursor-pointer w-full bg-black text-white py-4 rounded-lg text-lg font-semibold hover:bg-dark-tan hover:text-black transition">
+                <button class=" cursor-pointer w-full bg-black text-white py-4 rounded-lg text-lg font-semibold hover:bg-dark-tan hover:text-black transition">
                     Acheter
                 </button>
             </div>
         </article>
     </div>
 </body>
-
 </html>
