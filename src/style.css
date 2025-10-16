@@ -5,6 +5,12 @@
   --color-dark-tan: var(--clr-dark-tan);
   --color-light-tan: var(--clr-light-tan);
   --color-very-dark-tan: var(--clr-very-dark-tan);
+  --color-tan-hover: var(--clr-light-tan-hover);
+  --color-light-red: var(--clr-light-red);
+  --color-blue: var(--clr-blue);
+  --color-light-blue: var(--clr-light-blue);
+  --color-button: var(--clr-button);
+
   --font: 'Space Mono', monospace;
 }
 
@@ -13,10 +19,14 @@
   :root {
     --clr-tan: #CBBBA1;
     --clr-dark-tan: #AC9C7B;
+    --clr-light-tan-hover: #eddbd1;
     --clr-light-tan: #FBF0EA;
     --clr-very-dark-tan: #26140D;
-    
-    
+    --clr-light-red: #E9423C;
+    --clr-blue : #096EBE;
+    --clr-light-blue : #92C2EA;
+    --clr-button : #DED7CC;
+
     --font: 'Space Mono', monospace;
   }
 }
