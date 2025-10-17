@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheese Burger - Jean Burgers</title>
+    <title>Cheese Burger - Jean Burger Click & Collect</title>
     <link href="/src/style.css" rel="stylesheet" />
 </head>
 
 <body class="min-h-screen bg-light-tan">
     <!-- Header -->
-    <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
-        <a href ="../index.html" class="flex p-1">
-            <img class="w-12" src="../public/LOGO.png" alt="Logo JeanBurger">
-          </a>
-        <div class="flex justify-center items-center gap-5">
-            <h3 class="text-white">Profil</h3>
-            <button class="bg-white p-3 rounded-full overflow-hidden">
-                <img class="w-5" src="../public/Profile.png" alt="Profile">
-            </button>
-        </div>
-    </header>
+  <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
+    <a href ="../index.html" class="flex p-1">
+        <img class="w-12" src="../public/LOGO.png" alt="Logo JeanBurger">
+      </a>
+    <a href="../Profil.html" class="flex justify-center items-center gap-5">
+        <h3 class="text-white">Profil</h3>
+        <button class="bg-white p-3 rounded-full overflow-hidden">
+            <img class="w-5" src="../public/Profile.svg" alt="Profile">
+        </button>
+    </a>
+</header>
 
 
     <div class="max-w-7xl mx-auto p-6">
@@ -121,6 +121,44 @@
             </div>
         </article>
     </div>
+    <footer class="px-10 py-3 flex flex-3 items-center bg-very-dark-tan text-white justify-between">
+        <a href="../index.html" class="flex cursor-pointer">
+            <img class="w-30" src="../public/LOGO.png" alt="Logo">
+        </a>
+        <ul class="flex flex-row gap-5 text-xl">
+            <a class="cursor-pointer">
+                <li>Termes</li>
+            </a>
+            <li>|</li>
+            <a class="cursor-pointer">
+                <li>Confidentialité</li>
+            </a>
+            <li>|</li>
+            <a class="cursor-pointer">
+                <li>Politique relative aux cookies</li>
+            </a>
+            <li>|</li>
+            <a class="cursor-pointer">
+                <li>Accessibilité</li>
+            </a>
+            <li>|</li>
+            <a class="cursor-pointer">
+                <li>Paramètres</li>
+            </a>
+        </ul>
+        <figure class="flex flex-row gap-5 items-center">
+            <a class="cursor-pointer"
+                href="https://www.tripadvisor.fr/Restaurant_Review-g187159-d13219763-Reviews-Jean_Burger_Le_Bistrot-Limoges_Haute_Vienne_Nouvelle_Aquitaine.html">
+                <img alt="tripadvisor" class=" hover:scale-105 transition w-10" src="./public/TripAdvisor.svg">
+            </a>
+            <a class="cursor-pointer" href="https://www.facebook.com/chezjeanburger/?locale=fr_FR">
+                <img alt="facebook" class="cursor-pointer hover:scale-105 transition w-10" src="./public/Facebook.svg">
+            </a>
+            <a class="cursor-pointer" href="https://www.instagram.com/jeanburgerlimoges/?hl=fr">
+                <img alt="instagram" class="cursor-pointer hover:scale-105 transition w-10" src="./public/Insta.svg">
+            </a>
+        </figure>
+    </footer>
 </body>
 
 </html>

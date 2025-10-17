@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet" />
+  <title>Profil - Jean Burgers</title>
+</head>
+
+<body class="bg-light-tan overflow-x-hidden">
+
+  <!-- Header -->
+  <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
+    <a href="../index.html" class="flex p-1">
+      <img class="w-12" src="../public/LOGO.png" alt="Logo JeanBurger">
+    </a>
+    <a href="./Profil.html" class="flex justify-center items-center gap-5">
+      <h3 class="text-white">Profil</h3>
+      <button class="bg-white p-3 rounded-full overflow-hidden">
+        <img class="w-5" src="../public/Profile.svg" alt="Profile">
+      </button>
+    </a>
+  </header>
+
+  <!-- Main Content -->
+  <div class="flex pl-10 pt-10 pb-0 justify-start">
+    <a onclick="history.back()"
+      class=" cursor-pointer mb-6 w-12 h-12 bg-tan rounded-full flex items-center justify-center hover:bg-dark-tan transition">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </a>
+  </div>
+  <main class="w-screen px-4 sm:px-6 md:px-10 py-10 flex flex-col gap-16">
+    <!-- Titre + Navigation -->
+    <section class="flex flex-row gap-10 items-center">
+      <button class="bg-black p-5 rounded-full overflow-hidden">
+        <img class="w-10 h-10" src="../public/Profile-white.svg" alt="Profile">
+      </button>
+      <h1 class="text-4xl md:text-5xl font-bold">Profil</h1>
+    </section>
+
+    <section class="flex flex-col gap-50 sm:flex-row">
+      <div class="flex flex-col gap-5 font-bold">
+        <h2 class="text-4xl font-bold">Informations personnelles</h2>
+        <hr class="bg-very-dark-tan h-1 w-full mb-6">
+        <div class="flex flex-col gap-2">
+          Nom :
+          <h2 class="text-3xl font-normal">Nom</h2>
+        </div>
+        <div class="flex flex-col gap-2">
+          Prénom :
+          <h2 class="text-3xl font-normal">Prénom</h2>
+        </div>
+        <div class="flex flex-col gap-2">
+          Adresse email :
+          <h2 class="text-3xl font-normal">adresse-mail@truc.fr</h2>
+        </div>
+        <div class="flex flex-col gap-2">
+          Numéro de téléphone :
+          <h2 class="text-3xl font-normal">00 00 00 00 00</h2>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5 font-bold">
+        <h2 class="text-4xl">Informations de connexion</h2>
+        <hr class="bg-very-dark-tan h-1 w-full mb-6">
+        <div class="flex flex-col gap-2">
+          Identifiant :
+          <h2 class="text-3xl font-normal">Identifiant</h2>
+        </div>
+        <div class="flex flex-col gap-2">
+          Mot de passe :
+          <h2 class="text-3xl font-normal">••••••••••••••••••••••••</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
