@@ -62,50 +62,96 @@
       <button class="bg-black p-5 rounded-full overflow-hidden">
         <img class="w-10 h-10" src="../src/Profile-white.svg" alt="Profile">
       </button class="flex">
-      <h1 class="text-3xl md:text-4xl font-bold">Profil</h1>
+      <h1 class="text-xl md:text-4xl font-bold">Profil</h1>
       <h3 class="hover:underline cursor-pointer">Se Déconnecter</h3>
     </section>
 
     <section class="flex flex-col gap-50 sm:flex-row">
       <div class="flex flex-col gap-5 font-bold">
-        <h2 class="text-3xl font-bold">Informations personnelles</h2>
+        <h2 class="text-xl font-bold">Informations personnelles</h2>
         <hr class="bg-very-dark-tan h-1 w-full mb-6">
         <div class="flex flex-col gap-2">
           Nom :
-          <h2 class="text-3xl font-normal">Nom</h2>
+          <h2 class="text-xl font-normal">Nom</h2>
         </div>
         <div class="flex flex-col gap-2">
           Prénom :
-          <h2 class="text-3xl font-normal">Prénom</h2>
+          <h2 class="text-xl font-normal">Prénom</h2>
         </div>
         <div class="flex flex-col gap-2">
           Adresse email :
-          <h2 class="text-3xl font-normal">adresse-mail@truc.fr</h2>
+          <h2 class="text-xl font-normal">adresse-mail@truc.fr</h2>
         </div>
         <div class="flex flex-col gap-2">
           Numéro de téléphone :
-          <h2 class="text-3xl font-normal">00 00 00 00 00</h2>
+          <h2 class="text-xl font-normal">00 00 00 00 00</h2>
         </div>
       </div>
 
       <div class="flex flex-col gap-5 font-bold">
-        <h2 class="text-3xl">Historique des commandes</h2>
+        <h2 class="text-xl">Historique des commandes</h2>
         <hr class="bg-very-dark-tan h-1 w-full mb-6">
         <div class="flex flex-col gap-2">
           Le 08/08/2025 à 10:50
-          <h2 class="text-3xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
+          <span class="flex flex-row gap-5">
+            <h2 class="text-xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
+            <h3 class="hover:underline cursor-pointer">Voir la facture</h3>
+          </span>
         </div>
         <div class="flex flex-col gap-2">
           Le 08/08/2025 à 11:50
-          <h2 class="text-3xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
+          <span class="flex flex-row gap-5">
+            <h2 class="text-xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
+            <h3 class="hover:underline cursor-pointer">Voir la facture</h3>
+          </span>
         </div>
         <div class="flex flex-col gap-2">
           Le 08/08/2025 à 12:50
-          <h2 class="text-3xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
+          <span class="flex flex-row gap-5">
+            <h2 class="text-xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
+            <h3 class="hover:underline cursor-pointer">Voir la facture</h3>
+          </span>
         </div>
       </div>
     </section>
   </main>
+  <footer class="px-10 py-3 flex flex-3 items-center bg-very-dark-tan text-white justify-between">
+    <a href="../index.html" class="flex cursor-pointer">
+      <img class="w-30" src="./src/LOGO.png" alt="Logo">
+    </a>
+    <ul class="flex flex-row gap-5 text-xl">
+      <a class="cursor-pointer hover:underline">
+        <li class="text-center">Mentions légales</li>
+      </a>
+      <li>|</li>
+      <a class="cursor-pointer">
+        <li class="text-center">Confidentialité</li>
+      </a>
+      <li>|</li>
+      <a class="cursor-pointer">
+        <li class="text-center hover:underline">Conditions générales de vente</li>
+      </a>
+      <li>|</li>
+      <a class="cursor-pointer">
+        <li class="text-center">Accessibilité</li>
+      </a>
+      <li>|</li>
+      <a class="cursor-pointer">
+        <li class="text-center">Paramètres</li>
+      </a>
+    </ul>
+    <figure class="flex flex-row gap-5 items-center">
+      <a class="cursor-pointer"
+        href="https://www.tripadvisor.fr/Restaurant_Review-g187159-d13219763-Reviews-Jean_Burger_Le_Bistrot-Limoges_Haute_Vienne_Nouvelle_Aquitaine.html">
+        <img alt="tripadvisor" class=" hover:scale-105 transition w-10" src="./src/TripAdvisor.svg">
+      </a>
+      <a class="cursor-pointer" href="https://www.facebook.com/chezjeanburger/?locale=fr_FR">
+        <img alt="facebook" class="cursor-pointer hover:scale-105 transition w-10" src="./src/Facebook.svg">
+      </a>
+      <a class="cursor-pointer" href="https://www.instagram.com/jeanburgerlimoges/?hl=fr">
+        <img alt="instagram" class="cursor-pointer hover:scale-105 transition w-10" src="./src/Insta.svg">
+      </a>
+    </figure>
+  </footer>
 </body>
-
 </html>
