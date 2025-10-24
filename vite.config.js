@@ -9,7 +9,10 @@ export default defineConfig({
    rollupOptions: {
      input: {
        main: resolve(__dirname, "index.html"),
-       accueil: resolve(__dirname, "pages/accueil.html"),
+       cheeseburger: resolve(__dirname, "pages/CheeseBurger.html"),
+       frites: resolve(__dirname, "pages/Frites.html"),
+       commande: resolve(__dirname, "pages/Commande.html"),
+       profil: resolve(__dirname, "pages/Profil.html")
      },
    },
  },
