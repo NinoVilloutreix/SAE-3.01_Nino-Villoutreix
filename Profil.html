@@ -6,21 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/src/style.css" rel="stylesheet" />
   <title>Profil - Jean Burgers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="bg-light-tan overflow-x-hidden">
 
   <!-- Header -->
-  <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
+  <header class=" w-screen bg-very-dark-tan h-30 flex flex-row justify-between items-center px-10">
     <a href="../index.html" class="flex p-1">
-      <img class="w-12" src="../public/LOGO.png" alt="Logo JeanBurger">
+      <img class="w-20" src="src/LOGO.png" alt="Logo JeanBurger">
     </a>
-    <a href="./Profil.html" class="flex justify-center items-center gap-5">
-      <h3 class="text-white">Profil</h3>
-      <button class="bg-white p-3 rounded-full overflow-hidden">
-        <img class="w-5" src="../public/Profile.svg" alt="Profile">
-      </button>
-    </a>
+    <div class="flex flex-row items-center gap-5">
+      <a href="/Commande.html">
+        <img class="w-5" src="src/Basket.svg">
+      </a>
+      <a href="/Profil.html" class="flex justify-center items-center gap-5">
+        <h3 class="text-white">Profil</h3>
+        <button class="bg-white p-3 rounded-full overflow-hidden">
+          <img class="w-5" src="src/Profile.svg" alt="Profile">
+        </button>
+      </a>
+    </div>
   </header>
 
   <!-- Main Content -->
@@ -33,18 +56,19 @@
       </svg>
     </a>
   </div>
-  <main class="w-screen px-4 sm:px-6 md:px-10 py-10 flex flex-col gap-16">
+  <main class="w-screen px-20 sm:px-60 md:px-80 py-10 flex flex-col gap-16">
     <!-- Titre + Navigation -->
     <section class="flex flex-row gap-10 items-center">
       <button class="bg-black p-5 rounded-full overflow-hidden">
-        <img class="w-10 h-10" src="../public/Profile-white.svg" alt="Profile">
-      </button>
-      <h1 class="text-4xl md:text-5xl font-bold">Profil</h1>
+        <img class="w-10 h-10" src="../src/Profile-white.svg" alt="Profile">
+      </button class="flex">
+      <h1 class="text-3xl md:text-4xl font-bold">Profil</h1>
+      <h3 class="hover:underline cursor-pointer">Se Déconnecter</h3>
     </section>
 
     <section class="flex flex-col gap-50 sm:flex-row">
       <div class="flex flex-col gap-5 font-bold">
-        <h2 class="text-4xl font-bold">Informations personnelles</h2>
+        <h2 class="text-3xl font-bold">Informations personnelles</h2>
         <hr class="bg-very-dark-tan h-1 w-full mb-6">
         <div class="flex flex-col gap-2">
           Nom :
@@ -65,15 +89,19 @@
       </div>
 
       <div class="flex flex-col gap-5 font-bold">
-        <h2 class="text-4xl">Informations de connexion</h2>
+        <h2 class="text-3xl">Historique des commandes</h2>
         <hr class="bg-very-dark-tan h-1 w-full mb-6">
         <div class="flex flex-col gap-2">
-          Identifiant :
-          <h2 class="text-3xl font-normal">Identifiant</h2>
+          Le 08/08/2025 à 10:50
+          <h2 class="text-3xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
         </div>
         <div class="flex flex-col gap-2">
-          Mot de passe :
-          <h2 class="text-3xl font-normal">••••••••••••••••••••••••</h2>
+          Le 08/08/2025 à 11:50
+          <h2 class="text-3xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
+        </div>
+        <div class="flex flex-col gap-2">
+          Le 08/08/2025 à 12:50
+          <h2 class="text-3xl font-normal">Cheeseburger (x1) + Frites (x2) + IceTea (x1)</h2>
         </div>
       </div>
     </section>

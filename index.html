@@ -6,40 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/src/style.css" rel="stylesheet" />
   <title>Accueil - Jean Burger Click & Collect</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="bg-light-tan overflow-x-hidden">
 
   <!-- Header -->
-  <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
+  <header class=" w-screen bg-very-dark-tan h-30 flex flex-row justify-between items-center px-10">
     <a href="../index.html" class="flex p-1">
-      <img class="w-12" src="../public/LOGO.png" alt="Logo JeanBurger">
+      <img class="w-20" src="src/LOGO.png" alt="Logo JeanBurger">
     </a>
-    <a href="./Profil.html" class="flex justify-center items-center gap-5">
-      <h3 class="text-white">Profil</h3>
-      <button class="bg-white p-3 rounded-full overflow-hidden">
-        <img class="w-5" src="../public/Profile.svg" alt="Profile">
-      </button>
-    </a>
+    <div class="flex flex-row items-center gap-5">
+      <a href="/Commande.html">
+        <img class="w-5" src="src/Basket.svg">
+      </a>
+      <a href="/Profil.html" class="flex justify-center items-center gap-5">
+        <h3 class="text-white">Profil</h3>
+        <button class="bg-white p-3 rounded-full overflow-hidden">
+          <img class="w-5" src="src/Profile.svg" alt="Profile">
+        </button>
+      </a>
+    </div>
   </header>
 
   <!-- Main Content -->
-  <main class="w-screen px-4 sm:px-6 md:px-10 py-10 flex flex-col gap-16">
 
+  <main class="w-screen px-20 sm:px-60 md:px-80 py-10 flex flex-col gap-16">
+    <button id="togglePanier"
+      class="fixed right-10 top-1/2 -translate-y-1/2 bg-blue text-white p-6 rounded-full shadow-lg hover:bg-light-red transition">
+      <img class="w-8" src="src/Basket.svg">
+    </button>
     <!-- Titre + Navigation -->
     <section class="flex flex-col gap-10">
-      <h1 class="text-4xl md:text-5xl font-bold">Découvrez nos produits !</h1>
-      <nav class="flex flex-wrap justify-center sm:justify-start gap-5">
-        <a class="px-7 text-2xl py-2 bg-light-red text-white rounded-full">Toutes nos catégories</a>
-        <a href="Menus.html" class="px-7 text-2xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Menus</a>
+      <h1 class="text-3xl md:text-4xl font-bold">Découvrez nos produits !</h1>
+      <nav class="flex flex-wrap justify-center xl:justify-start gap-5">
+        <a class="px-7 text-xl py-2 bg-light-red text-white rounded-full">Toutes nos catégories</a>
+        <a href="Menus.html"
+          class="px-7 text-xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Menus</a>
         <a href="Burgers.html"
-          class="px-7 text-2xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Burgers</a>
+          class="px-7 text-xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Burgers</a>
         <a href="Frites.html"
-          class="px-7 text-2xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Frites</a>
+          class="px-7 text-xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Frites</a>
         <a href="Boissons.html"
-          class="px-7 text-2xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Boissons</a>
+          class="px-7 text-xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Boissons</a>
         <a href="Desserts.html"
-          class="px-7 text-2xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Desserts</a>
+          class="px-7 text-xl bg-button py-2 bg-a hover:bg-tan rounded-full transition duration-100">Desserts</a>
       </nav>
     </section>
 
@@ -48,463 +76,246 @@
 
       <!-- Produits -->
       <div class="flex-1">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Toutes nos catégories</h2>
-        <hr class="bg-very-dark-tan h-1 w-1/2 mb-6">
         <div class="flex flex-row flex-wrap gap-6">
-          <a href="/Details/Frites.html" class="flex">
+          <!-- A -->
+          <a href="/CheeseBurger.html" class="flex">
             <article
               class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
               <figure class="flex h-40 w-full">
-                <img src="/public/Frites.png" class="object-cover w-full h-full" alt="Frites">
-              </figure>
-              <span class="flex flex-col px-2 py-5 text-left gap-5">
-                <ul class="flex flex-col">
-                  <li class="text-2xl">Frites</li>
-                  <li class="truncate w-52">Grande.</li>
-                </ul>
-                <span class="flex justify-between">
-                  <h3 class="text-3xl">0.90 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
-                </span>
-
-                <button
-                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="/Check.svg" alt="logo-check">
-                  <p>En stock</p>
-                </button>
-
-              </span>
-            </article>
-          </a>
-          <a href="/Details/Mozza.html" class="flex">
-            <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
-              <figure class="flex h-40 w-full">
-                <img src="/public/Mozza.png" class="object-cover w-full h-full" alt="Mozza">
-              </figure>
-              <span class="flex flex-col px-2 py-5 text-left gap-5">
-                <ul class="flex flex-col">
-                  <li class="text-2xl">Batonnets Mozza</li>
-                  <li class="truncate w-52">5 pièces</li>
-                </ul>
-                <span class="flex justify-between">
-                  <h3 class="text-3xl">0.90 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
-                </span>
-
-                <button
-                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
-                  <p>Bientôt épuisé</p>
-                </button>
-
-
-              </span>
-            </article>
-          </a>
-
-          <a href="/Details/Oinion.html" class="flex">
-            <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
-              <figure class="flex h-40 w-full">
-                <img src="/public/OignonRing.png" class="w-full h-full object-cover" alt="OignonRing">
-              </figure>
-              <span class="flex flex-col px-2 py-5 text-left gap-5">
-                <ul class="flex flex-col">
-                  <li class="text-2xl">Onion Ring</li>
-                  <li class="truncate w-52">6 pièces.</li>
-                </ul>
-                <span class="flex justify-between">
-                  <h3 class="text-3xl">0.90 €</h3>
-                  <button class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
-                </span>
-
-                <button
-                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
-                  <p>Indisponible</p>
-                </button>
-
-
-              </span>
-            </article>
-          </a>
-
-          <a href="/Details/CheeseBurger.html" class="flex">
-            <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
-              <figure class="flex h-40 w-full">
-                <img src="/CheeseBurger.png" class="object-cover w-full h-full" alt="CheeseBurger">
+                <img src="/src/CheeseBurger.png" class="object-cover w-full h-full" alt="CheeseBurger">
               </figure>
               <span class="flex flex-col px-2 py-5 text-left gap-5">
                 <ul class="flex flex-col">
                   <li class="text-2xl">Cheese Burger</li>
-                  <li class="truncate w-52">Steak Haché Blason prestige, Cheddar, Sauce Burger, Tomates et Iceberg.</li>
+                  <li class="truncate w-52">Steak Haché Blason Prestige, Cheddar, Sauce Burger, Tomates et Iceberg.</li>
                 </ul>
                 <span class="flex justify-between">
                   <h3 class="text-3xl">9 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
                 </span>
 
                 <button
                   class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="/Check.svg" alt="logo-check">
+                  <img class="w-5" src="src/Check.svg" alt="logo-check">
                   <p>En stock</p>
                 </button>
 
               </span>
             </article>
           </a>
-
-          <a href="/Details/Hamburger.html" class="flex">
+          <a href="/Frites.html" class="flex">
             <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
+              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp hover:border-2 border-black">
               <figure class="flex h-40 w-full">
-                <img src="/public/Hamburger.jpg" class="object-cover w-full h-full" alt="Hamburger">
+                <img src="/src/Frites.png" class="object-cover w-full h-full" alt="Frites">
               </figure>
               <span class="flex flex-col px-2 py-5 text-left gap-5">
                 <ul class="flex flex-col">
-                  <li class="text-2xl">Hamburger</li>
-                  <li class="truncate w-52">Steak Haché Blason prestige, Cheddar, Ketchup.</li>
+                  <li class="text-2xl">Frites</li>
+                  <li class="truncate w-52">Croustillantes et savoureuses.</li>
                 </ul>
                 <span class="flex justify-between">
-                  <h3 class="text-3xl">8 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
+                  <h3 class="text-3xl">1.10 €</h3>
                 </span>
 
                 <button
-                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
-                  <p>Bientôt épuisé</p>
-                </button>
-
-
-              </span>
-            </article>
-          </a>
-
-          <a href="/Details/VeggieBurger.html" class="flex">
-            <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
-              <figure class="flex h-40 w-full">
-                <img src="/public/VeggieBurger.png" class="object-cover w-full h-full" alt="VeggieBurger">
-              </figure>
-              <span class="flex flex-col px-2 py-5 text-left gap-5">
-                <ul class="flex flex-col">
-                  <li class="text-2xl">Veggie Burger</li>
-                  <li class="truncate w-52">Galette de Pommes de Terre, Cheddar, Bacon, Sauce Paprika, Tomates et
-                    Roquette.</li>
-                </ul>
-                <span class="flex justify-between">
-                  <h3 class="text-3xl">8 €</h3>
-                  <button class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
-                </span>
-
-                <button
-                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
+                  class="inline-flex items-center gap-3 bg-indisp-bg rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
+                  <img class="w-4" src="src/Cross.svg" alt="logo-cross">
                   <p>Indisponible</p>
                 </button>
 
-
               </span>
             </article>
           </a>
-          <a href="/Details/Brownie.html" class="flex">
+          <a href="/CheeseBurger.html" class="flex">
             <article
               class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
               <figure class="flex h-40 w-full">
-                <img src="/Brownie.png" class="object-cover w-full h-full" alt="Brownie">
+                <img src="/src/CheeseBurger.png" class="object-cover w-full h-full" alt="CheeseBurger">
               </figure>
               <span class="flex flex-col px-2 py-5 text-left gap-5">
                 <ul class="flex flex-col">
-                  <li class="text-2xl">Brownie</li>
-                  <li class="truncate w-52">Fondant.</li>
+                  <li class="text-2xl">Cheese Burger</li>
+                  <li class="truncate w-52">Steak Haché Blason Prestige, Cheddar, Sauce Burger, Tomates et Iceberg.</li>
                 </ul>
                 <span class="flex justify-between">
-                  <h3 class="text-3xl">1.50 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
+                  <h3 class="text-3xl">9 €</h3>
                 </span>
 
                 <button
                   class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="/Check.svg" alt="logo-check">
+                  <img class="w-5" src="src/Check.svg" alt="logo-check">
                   <p>En stock</p>
                 </button>
 
               </span>
             </article>
           </a>
-
-          <a href="/Details/Yaourt.html" class="flex">
+          <a href="/CheeseBurger.html" class="flex">
             <article
               class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
               <figure class="flex h-40 w-full">
-                <img src="/public/Yaourt.png" class="object-cover w-full h-full" alt="Yaourt">
+                <img src="/src/CheeseBurger.png" class="object-cover w-full h-full" alt="CheeseBurger">
               </figure>
               <span class="flex flex-col px-2 py-5 text-left gap-5">
                 <ul class="flex flex-col">
-                  <li class="text-2xl">Yaourt Framboise</li>
-                  <li class="truncate w-52">Crumble, yaourt et confiture de framboise.</li>
+                  <li class="text-2xl">Cheese Burger</li>
+                  <li class="truncate w-52">Steak Haché Blason Prestige, Cheddar, Sauce Burger, Tomates et Iceberg.</li>
                 </ul>
                 <span class="flex justify-between">
-                  <h3 class="text-3xl">1 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
+                  <h3 class="text-3xl">9 €</h3>
                 </span>
 
                 <button
                   class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
-                  <p>Bientôt épuisé</p>
-                </button>
-
-
-              </span>
-            </article>
-          </a>
-
-          <a href="/Details/Glace.html" class="flex">
-            <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
-              <figure class="flex h-40 w-full">
-                <img src="/public/Glace.png" class="w-full h-full object-cover" alt="Glace">
-              </figure>
-              <span class="flex flex-col px-2 py-5 text-left gap-5">
-                <ul class="flex flex-col">
-                  <li class="text-2xl">Glace</li>
-                  <li class="truncate w-52">Chocolat, Vanille, Fraise, Framboise, Pistache.</li>
-                </ul>
-                <span class="flex justify-between">
-                  <h3 class="text-3xl">2 €</h3>
-                  <button class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
-                </span>
-
-                <button
-                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
-                  <p>Indisponible</p>
-                </button>
-
-
-              </span>
-            </article>
-          </a>
-          <a href="/Details/CocaCola.html" class="flex">
-            <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
-              <figure class="flex h-40 w-full">
-                <img src="/public/CocaCola.png" class="object-cover w-full h-full" alt="CocaCola">
-              </figure>
-              <span class="flex flex-col px-2 py-5 text-left gap-5">
-                <ul class="flex flex-col">
-                  <li class="text-2xl">CocaCola</li>
-                  <li class="truncate w-52">60 cl.</li>
-                </ul>
-                <span class="flex justify-between">
-                  <h3 class="text-3xl">1.50 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
-                </span>
-
-                <button
-                  class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="/Check.svg" alt="logo-check">
+                  <img class="w-5" src="src/Check.svg" alt="logo-check">
                   <p>En stock</p>
                 </button>
 
               </span>
             </article>
           </a>
-
-          <a href="/Details/Orangina.html" class="flex">
+          <a href="/CheeseBurger.html" class="flex">
             <article
               class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-tan-hover hover:border-2 border-black">
               <figure class="flex h-40 w-full">
-                <img src="/public/Orangina.png" class="object-cover w-full h-full" alt="Orangina">
+                <img src="/src/CheeseBurger.png" class="object-cover w-full h-full" alt="CheeseBurger">
               </figure>
               <span class="flex flex-col px-2 py-5 text-left gap-5">
                 <ul class="flex flex-col">
-                  <li class="text-2xl">Orangina</li>
-                  <li class="truncate w-52">50 cl.</li>
+                  <li class="text-2xl">Cheese Burger</li>
+                  <li class="truncate w-52">Steak Haché Blason Prestige, Cheddar, Sauce Burger, Tomates et Iceberg.</li>
                 </ul>
                 <span class="flex justify-between">
-                  <h3 class="text-3xl">1 €</h3>
-                  <button
-                    class="w-10 h-10 hover:scale-125 duration-100 flex justify-center bg-dark-tan rounded-full cursor-pointer">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
+                  <h3 class="text-3xl">9 €</h3>
                 </span>
 
                 <button
                   class="inline-flex items-center gap-3 bg-tan rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/SmileDown.svg" alt="logo-smiledown">
-                  <p>Bientôt épuisé</p>
+                  <img class="w-5" src="src/Check.svg" alt="logo-check">
+                  <p>En stock</p>
                 </button>
-
-
-              </span>
-            </article>
-          </a>
-          <a href="/Details/Pepsi.html" class="flex">
-            <article
-              class="flex w-60 justify-center items-center flex-col bg-light-tan text-very-dark-tan hover:scale-102 transition-all duration-100 cursor-pointer hover:bg-indisp-bg hover:border-2 border-black">
-              <figure class="flex h-40 w-full">
-                <img src="/public/Pepsi.png" class="w-full h-full object-cover" alt="Pepsi">
-              </figure>
-              <span class="flex flex-col px-2 py-5 text-left gap-5">
-                <ul class="flex flex-col">
-                  <li class="text-2xl">Pepsi</li>
-                  <li class="truncate w-52">50 cl.</li>
-                </ul>
-                <span class="flex justify-between">
-                  <h3 class="text-3xl">1.50 €</h3>
-                  <button class="w-10 h-10 rotate-45 flex justify-center bg-indisp rounded-full">
-                    <img class="w-6" src="/Plus.svg" alt="logo-plus">
-                  </button>
-                </span>
-
-                <button
-                  class="inline-flex items-center gap-3 bg-indisp rounded-full px-3 py-1 text-center cursor-pointer whitespace-nowrap w-fit">
-                  <img class="w-5" src="public/Cross.svg" alt="logo-cross">
-                  <p>Indisponible</p>
-                </button>
-
 
               </span>
             </article>
           </a>
         </div>
       </div>
+      <!-- Bouton pour ouvrir le panier -->
 
       <!-- Commande -->
-      <aside class=" w-1/3 min-w-100 p-6">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ma commande :</h2>
-        <ul class="flex flex-col gap-2.5">
-          <li
-            class="flex justify-between items-center text-2xl py-2.5 bg-tan rounded-full pl-10 pr-4 hover:scale-101 transition hover:bg-dark-tan">
-            <div class="flex gap-5">
-              <span>Produit 1</span>
-              <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
-              <div class="flex flex-row gap-3">
-                <img src="/public/cross.svg" alt="Plus"
-                  class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-                <img src="/public/Minus.svg" alt="Minus"
-                  class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-              </div>
+      <aside id="panier"
+        class="fixed top-0 right-0 w-1/3 min-w-96 h-full bg-light-tan p-6 transform translate-x-full transition-transform duration-300 shadow-lg z-50">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold">Ma commande :</h2>
+          <button id="closePanier" class="text-3xl font-bold cursor-pointer">&times;</button>
+        </div>
 
+        <ul class="flex flex-col gap-2.5 overflow-y-auto h-[75vh]">
+          <li
+            class="flex justify-between items-center text-2xl py-2.5 rounded-full pl-10 pr-4 hover:scale-101 transition">
+            <div class="flex gap-5 items-center">
+              <span>Produit 1</span>
+              <figure class="w-15 h-15">
+                <img class="object-cover w-full h-full" src="/src/CheeseBurger.png">
+              </figure>
+              <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">
+                < x2>
+              </button>
             </div>
-            <div class="flex">
-              <button
-                class="flex justify-center items-center w-10 h-10 rounded-full text-very-dark-tan hover:bg-very-dark-tan hover:text-white hover:scale-110 transition cursor-pointer">✕</button>
-            </div>
+            <button
+              class="flex justify-center items-center w-10 h-10 rounded-full text-very-dark-tan hover:bg-very-dark-tan hover:text-white hover:scale-110 transition cursor-pointer">✕</button>
           </li>
           <li
-            class="flex justify-between items-center text-2xl py-2.5 bg-tan rounded-full pl-10 pr-4 hover:scale-101 transition hover:bg-dark-tan">
-            <div class="flex gap-5">
-              <span>Produit 1</span>
-              <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
-              <div class="flex flex-row gap-3">
-                <img src="/public/cross.svg" alt="Plus"
-                  class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-                <img src="/public/Minus.svg" alt="Minus"
-                  class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-              </div>
-
+            class="flex justify-between items-center text-2xl py-2.5 rounded-full pl-10 pr-4 hover:scale-101 transition">
+            <div class="flex gap-5 items-center">
+              <span>Produit 2</span>
+              <figure class="w-15 h-15">
+                <img class="object-cover w-full h-full" src="/src/CheeseBurger.png">
+              </figure>
+              <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">
+                < x2>
+              </button>
             </div>
-            <div class="flex">
-              <button
-                class="flex justify-center items-center w-10 h-10 rounded-full text-very-dark-tan hover:bg-very-dark-tan hover:text-white hover:scale-110 transition cursor-pointer">✕</button>
-            </div>
+            <button
+              class="flex justify-center items-center w-10 h-10 rounded-full text-very-dark-tan hover:bg-very-dark-tan hover:text-white hover:scale-110 transition cursor-pointer">✕</button>
           </li>
           <li
-            class="flex justify-between items-center text-2xl py-2.5 bg-tan rounded-full pl-10 pr-4 hover:scale-101 transition hover:bg-dark-tan">
-            <div class="flex gap-5">
-              <span>Produit 1</span>
-              <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
-              <div class="flex flex-row gap-3">
-                <img src="/public/cross.svg" alt="Plus"
-                  class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-                <img src="/public/Minus.svg" alt="Minus"
-                  class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-              </div>
-
+            class="flex justify-between items-center text-2xl py-2.5 rounded-full pl-10 pr-4 hover:scale-101 transition">
+            <div class="flex gap-5 items-center">
+              <span>Produit 3</span>
+              <figure class="w-15 h-15">
+                <img class="object-cover w-full h-full" src="/src/CheeseBurger.png">
+              </figure>
+              <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">
+                < x2>
+              </button>
             </div>
-            <div class="flex">
-              <button
-                class="flex justify-center items-center w-10 h-10 rounded-full text-very-dark-tan hover:bg-very-dark-tan hover:text-white hover:scale-110 transition cursor-pointer">✕</button>
-            </div>
+            <button
+              class="flex justify-center items-center w-10 h-10 rounded-full text-very-dark-tan hover:bg-very-dark-tan hover:text-white hover:scale-110 transition cursor-pointer">✕</button>
           </li>
         </ul>
+
         <a href="Commande.html"
           class="flex whitespace-nowrap w-fit justify-center items-center gap-5 cursor-pointer mt-6 px-8 py-2 bg-blue text-white text-3xl text-center hover:bg-light-red rounded-full transition duration-100">
-          <img class="w-7" src="public/Basket.svg">
+          <img class="w-7" src="src/Basket.svg">
           Consulter
         </a>
       </aside>
+
+      <!-- Script -->
+      <script>
+        const togglePanier = document.getElementById('togglePanier');
+        const closePanier = document.getElementById('closePanier');
+        const panier = document.getElementById('panier');
+
+        togglePanier.addEventListener('click', () => {
+          panier.classList.toggle('translate-x-full');
+        });
+
+        closePanier.addEventListener('click', () => {
+          panier.classList.add('translate-x-full');
+        });
+      </script>
+
 
     </section>
   </main>
 
   <footer class="px-10 py-3 flex flex-3 items-center bg-very-dark-tan text-white justify-between">
     <a href="../index.html" class="flex cursor-pointer">
-      <img class="w-30" src="./public/LOGO.png" alt="Logo">
+      <img class="w-30" src="./src/LOGO.png" alt="Logo">
     </a>
     <ul class="flex flex-row gap-5 text-xl">
-      <a class="cursor-pointer">
-        <li>Termes</li>
+      <a class="cursor-pointer hover:underline">
+        <li class="text-center">Mentions légales</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Confidentialité</li>
+        <li class="text-center">Confidentialité</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Politique relative aux cookies</li>
+        <li class="text-center hover:underline">Conditions générales de vente</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Accessibilité</li>
+        <li class="text-center">Accessibilité</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Paramètres</li>
+        <li class="text-center">Paramètres</li>
       </a>
     </ul>
     <figure class="flex flex-row gap-5 items-center">
-      <a class="cursor-pointer" href="https://www.tripadvisor.fr/Restaurant_Review-g187159-d13219763-Reviews-Jean_Burger_Le_Bistrot-Limoges_Haute_Vienne_Nouvelle_Aquitaine.html">
-        <img alt="tripadvisor" class=" hover:scale-105 transition w-10" src="./public/TripAdvisor.svg">
+      <a class="cursor-pointer"
+        href="https://www.tripadvisor.fr/Restaurant_Review-g187159-d13219763-Reviews-Jean_Burger_Le_Bistrot-Limoges_Haute_Vienne_Nouvelle_Aquitaine.html">
+        <img alt="tripadvisor" class=" hover:scale-105 transition w-10" src="./src/TripAdvisor.svg">
       </a>
       <a class="cursor-pointer" href="https://www.facebook.com/chezjeanburger/?locale=fr_FR">
-        <img alt="facebook" class="cursor-pointer hover:scale-105 transition w-10" src="./public/Facebook.svg">
+        <img alt="facebook" class="cursor-pointer hover:scale-105 transition w-10" src="./src/Facebook.svg">
       </a>
       <a class="cursor-pointer" href="https://www.instagram.com/jeanburgerlimoges/?hl=fr">
-        <img alt="instagram" class="cursor-pointer hover:scale-105 transition w-10" src="./public/Insta.svg">
+        <img alt="instagram" class="cursor-pointer hover:scale-105 transition w-10" src="./src/Insta.svg">
       </a>
     </figure>
   </footer>

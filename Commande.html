@@ -6,31 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/src/style.css" rel="stylesheet" />
   <title>Commande - Jean Burgers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter:ital,wght@0,100..900;1,100..900&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="bg-light-tan overflow-x-hidden">
 
   <!-- Header -->
-  <header class=" w-screen bg-very-dark-tan h-15 flex flex-row justify-between items-center px-10">
+  <header class=" w-screen bg-very-dark-tan h-30 flex flex-row justify-between items-center px-10">
     <a href="../index.html" class="flex p-1">
-      <img class="w-12" src="../public/LOGO.png" alt="Logo JeanBurger">
+      <img class="w-20" src="src/LOGO.png" alt="Logo JeanBurger">
     </a>
-    <a href="./Profil.html" class="flex justify-center items-center gap-5">
-      <h3 class="text-white">Profil</h3>
-      <button class="bg-white p-3 rounded-full overflow-hidden">
-        <img class="w-5" src="../public/Profile.svg" alt="Profile">
-      </button>
-    </a>
+    <div class="flex flex-row items-center gap-5">
+      <a href="/Commande.html">
+        <img class="w-5" src="src/Basket.svg">
+      </a>
+      <a href="/Profil.html" class="flex justify-center items-center gap-5">
+        <h3 class="text-white">Profil</h3>
+        <button class="bg-white p-3 rounded-full overflow-hidden">
+          <img class="w-5" src="src/Profile.svg" alt="Profile">
+        </button>
+      </a>
+    </div>
   </header>
 
   <!-- Main Content -->
-  <main class="w-screen px-4 sm:px-6 md:px-10 py-10 flex flex-col gap-16">
+  <main class="w-screen px-20 sm:px-60 md:px-80 py-10 flex flex-col gap-16">
     <!-- Titre + Navigation -->
     <section class="flex flex-row gap-10 items-center">
-      <h1 class="text-4xl md:text-5xl font-bold">Commande</h1>
+      <h1 class="text-3xl md:text-4xl font-bold">Commande</h1>
       <a onclick="history.back()"
         class="flex flex-row items-center justify-center bg-indisp hover:bg-indisp-bg transition cursor-pointer p-5 gap-5 rounded-full overflow-hidden">
-        <img class="w-7 h-7" src="../public/Back.svg" alt="Profile">
+        <img class="w-7 h-7" src="../src/Back.svg" alt="Profile">
         <h2 class="text-3xl font-bold">Continuer la commande</h2>
       </a>
     </section>
@@ -41,9 +64,9 @@
           <span>Produit 1</span>
           <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
           <div class="flex flex-row gap-3">
-            <img src="/public/cross.svg" alt="Plus"
+            <img src="/src/cross.svg" alt="Plus"
               class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-            <img src="/public/Minus.svg" alt="Minus"
+            <img src="/src/Minus.svg" alt="Minus"
               class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
           </div>
 
@@ -59,9 +82,9 @@
           <span>Produit 1</span>
           <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
           <div class="flex flex-row gap-3">
-            <img src="/public/cross.svg" alt="Plus"
+            <img src="/src/cross.svg" alt="Plus"
               class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-            <img src="/public/Minus.svg" alt="Minus"
+            <img src="/src/Minus.svg" alt="Minus"
               class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
           </div>
 
@@ -77,9 +100,9 @@
           <span>Produit 1</span>
           <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
           <div class="flex flex-row gap-3">
-            <img src="/public/cross.svg" alt="Plus"
+            <img src="/src/cross.svg" alt="Plus"
               class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-            <img src="/public/Minus.svg" alt="Minus"
+            <img src="/src/Minus.svg" alt="Minus"
               class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
           </div>
 
@@ -95,9 +118,9 @@
           <span>Produit 1</span>
           <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
           <div class="flex flex-row gap-3">
-            <img src="/public/cross.svg" alt="Plus"
+            <img src="/src/cross.svg" alt="Plus"
               class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-            <img src="/public/Minus.svg" alt="Minus"
+            <img src="/src/Minus.svg" alt="Minus"
               class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
           </div>
 
@@ -113,9 +136,9 @@
           <span>Produit 1</span>
           <button class="bg-black text-white font-bold px-2 py-1.25 text-center rounded-full text-base">x2</button>
           <div class="flex flex-row gap-3">
-            <img src="/public/cross.svg" alt="Plus"
+            <img src="/src/cross.svg" alt="Plus"
               class="cursor-pointer w-9 rotate-45 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
-            <img src="/public/Minus.svg" alt="Minus"
+            <img src="/src/Minus.svg" alt="Minus"
               class="cursor-pointer w-10 text-very-dark-tan font-bold px-2 py-1.25 text-center rounded-full transition hover:scale-150">
           </div>
 
@@ -129,38 +152,39 @@
   </main>
   <footer class="px-10 py-3 flex flex-3 items-center bg-very-dark-tan text-white justify-between">
     <a href="../index.html" class="flex cursor-pointer">
-      <img class="w-30" src="./public/LOGO.png" alt="Logo">
+      <img class="w-30" src="./src/LOGO.png" alt="Logo">
     </a>
     <ul class="flex flex-row gap-5 text-xl">
-      <a class="cursor-pointer">
-        <li>Termes</li>
+      <a class="cursor-pointer hover:underline">
+        <li class="text-center">Mentions légales</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Confidentialité</li>
+        <li class="text-center">Confidentialité</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Politique relative aux cookies</li>
+        <li class="text-center hover:underline">Conditions générales de vente</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Accessibilité</li>
+        <li class="text-center">Accessibilité</li>
       </a>
       <li>|</li>
       <a class="cursor-pointer">
-        <li>Paramètres</li>
+        <li class="text-center">Paramètres</li>
       </a>
     </ul>
     <figure class="flex flex-row gap-5 items-center">
-      <a class="cursor-pointer" href="https://www.tripadvisor.fr/Restaurant_Review-g187159-d13219763-Reviews-Jean_Burger_Le_Bistrot-Limoges_Haute_Vienne_Nouvelle_Aquitaine.html">
-        <img alt="tripadvisor" class=" hover:scale-105 transition w-10" src="./public/TripAdvisor.svg">
+      <a class="cursor-pointer"
+        href="https://www.tripadvisor.fr/Restaurant_Review-g187159-d13219763-Reviews-Jean_Burger_Le_Bistrot-Limoges_Haute_Vienne_Nouvelle_Aquitaine.html">
+        <img alt="tripadvisor" class=" hover:scale-105 transition w-10" src="./src/TripAdvisor.svg">
       </a>
       <a class="cursor-pointer" href="https://www.facebook.com/chezjeanburger/?locale=fr_FR">
-        <img alt="facebook" class="cursor-pointer hover:scale-105 transition w-10" src="./public/Facebook.svg">
+        <img alt="facebook" class="cursor-pointer hover:scale-105 transition w-10" src="./src/Facebook.svg">
       </a>
       <a class="cursor-pointer" href="https://www.instagram.com/jeanburgerlimoges/?hl=fr">
-        <img alt="instagram" class="cursor-pointer hover:scale-105 transition w-10" src="./public/Insta.svg">
+        <img alt="instagram" class="cursor-pointer hover:scale-105 transition w-10" src="./src/Insta.svg">
       </a>
     </figure>
   </footer>
